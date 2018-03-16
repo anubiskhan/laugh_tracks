@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>Comedians</title>
+</head>
+<body>
+  <h1>Comedic Heroes & Heroines</h1>
+  <% @comedians.each do |comedian| %>
+    <ul>
+      <li><%= comedian.name %></li>
+      <li><%= comedian.age %></li>
+    </ul>
+  <% end %>
+</body>
+</html>
