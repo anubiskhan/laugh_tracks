@@ -4,7 +4,9 @@ class LaughTracksApp < Sinatra::Base
     redirect '/comedians'
   end
 
-  get '/' do
+  get '/comedians' do
+    comedians = Comedian.all
+
     erb :index
   end
 end
